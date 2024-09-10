@@ -117,6 +117,60 @@
             color: aliceblue;
             font-size: 1.5rem;
         }
+         .projectsSection {
+        max-width: 80vw;
+        margin: auto;
+        color: gray;
+        padding: 40px 0;
+    }
+
+    .projectsSection h1 {
+        font-size: 3rem;
+        text-align: center;
+        color: rgb(78, 80, 80);
+        margin-bottom: 40px;
+    }
+
+    .projectsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .projectCard {
+        background-color: rgb(78, 80, 80);
+        border-radius: 10px;
+        padding: 20px;
+        width: 250px;
+        margin: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .projectCard h3 {
+        margin-bottom: 10px;
+        color: rgb(124, 124, 231);
+    }
+
+    .projectCard p {
+        margin-bottom: 15px;
+    }
+
+    .projectLink {
+        text-decoration: none;
+        color: rgb(255, 0, 255);
+        font-weight: bold;
+        border: 2px solid rgb(255, 0, 255);
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .projectLink:hover {
+        background-color: rgb(255, 0, 255);
+        color: white;
+    }
     </style>
 </head>
 <body>
@@ -141,7 +195,7 @@
                 <div>I am a Passionate</div>
                 <span id="element"></span>
                 <div class="button">
-                    <a href="https://drive.google.com/file/d/10dobQFtbDMMJ6ZKrCm4HHTt_esZvCS4e/view?usp=sharing"><button class="btn" onclick="">Resume</button></a>
+                    <a href="https://drive.google.com/file/d/1L8QsqgFPHLX8-ATf4J6pD-evbq1dpGI8/view?usp=sharing"><button class="btn" onclick="">Resume</button></a>
                     <a href="https://github.com/manaskush"><button class="btn">Github Profile Link</button></a>
                     <a href="https://www.linkedin.com/in/manas-kush-7a22b3184/"><button class="btn">Linkedin Profile Link</button></a>
                     </div>
@@ -176,7 +230,27 @@
                 >>>   Currently I am learning NEXTjs and React
             </div><br>
         </section>
-
+        <section class="projectsSection">
+    <h1>My Projects</h1>
+    <div class="projectsContainer">
+        <div class="projectCard">
+            <h3>Prospera</h3>
+            <p>A website build on next js and react with a lot of ui designs and interactive use.</p>
+            <a href="https://prospera-psi.vercel.app/" class="projectLink">View Project</a>
+        </div>
+        <div class="projectCard">
+            <h3>Refokus Clone</h3>
+            <p>This is the clone of refokus webd designing agency's website .</p>
+            <a href="https://refokus-clone-one.vercel.app/" class="projectLink">View Project</a>
+        </div>
+        <div class="projectCard">
+            <h3>Portfolio</h3>
+            <p>This is the third project which is basic and built on HTML,CSS and JavaScript.</p>
+            <a href="https://portfoliomanaskush-manas-kushs-projects.vercel.app/" class="projectLink">View Project</a>
+        </div>
+        
+    </div>
+</section>
     </main>
     <footer>
         <div class="footer">
